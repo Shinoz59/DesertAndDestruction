@@ -18,3 +18,4 @@ enum suite{
 // floor of divide?
 
 // showing cards in order would simply sort them by id / 13.
+image_speed = 0;

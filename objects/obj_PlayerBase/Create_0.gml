@@ -14,5 +14,7 @@ playerHand = instance_create_layer(x, y, "Cards", obj_Hand);
 scr_LoadBattleMenu(playerMenu);
 playerMenu.menu_control = false;
 playerMenu.visible = false;
+
 global.Player = id; // Probably will need this for later.
 logic = Player_Menu;
+End_Turn(playerDeck, playerHand); // draw the starting hand.

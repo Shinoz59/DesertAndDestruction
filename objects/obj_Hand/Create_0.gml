@@ -14,9 +14,11 @@ draw_extra = 0;
 
 hand_Rank = -1; // Null, filled in by Hand_Ranking
 high_Card = -1; // Null, filled in by Hand_Ranking.
+image_xscale = 2;
+image_yscale = 2;
 
-xpos = 0;
-ypos = 0;
+x = view_wport[0] - 50 - sprite_width; // since position is based on the gui, not the object.
+y = view_hport[0] - 75 - sprite_height;
 
 is_selecting = false;
 selected_card = 0;

@@ -15,7 +15,7 @@ if (ds_list_empty(deck.cards)){
 var index = ds_list_size(hand.cards);
 if (index != hand.hand_limit){
 	  // Get the card.
-	var cardID = deck.cards[0];
+	var cardID = ds_list_find_value(deck.cards, 0);
 	  // Remove the card from the list.
 	ds_list_delete(deck.cards, 0); // Don't add it to the discards until its used.
 	var full_cardID = instance_create_depth(0,0,0,obj_Card);

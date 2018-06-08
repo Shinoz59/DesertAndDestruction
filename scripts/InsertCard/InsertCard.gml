@@ -9,12 +9,12 @@ var inserted = false;
 var handsize = ds_list_size(hand.cards);
 
 if (handsize == 0){
-	ds_list_insert(hand, 0, card);	
+	ds_list_insert(hand.cards, 0, card);	
 	inserted = true;
 }
 else{
 	for (var i = 0; i < handsize; ++i){
-		var compare = hand.cards[i];
+		var compare = ds_list_find_value(hand.cards, i);
 		if (card.card_num < compare.card_num){ // If the cards number is lower, insert before it.
 			ds_list_insert(hand.cards, i, card);
 			inserted = true;
